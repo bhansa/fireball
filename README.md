@@ -1,10 +1,10 @@
 # fireball
-Fireball is python game using pygame where player has to save itself from the fireball. Longer the time it saves itself more the points.
+Fireball is a python game using pygame where a player has to avoid a fireball. The longer the player stays alive, the more points the player gets.
 
-## How the game works?
- - Player starts the game and there will a player and a fireball initially.  
+## How does the game work?
+ - Player starts the game and there will be the player and a fireball initially.  
  
- - Player have dogde the ball using the keybords arrow keys, where the fireball will have random position change which will try to follow the player.  
+ - Player will dodge the ball using the keyboard arrow keys, while the fireball will change positions randomly to try to follow the player.  
 
- - After a specific time according to the levels (Easy|Medium|Hard) more fireballs should be added to the game.  
- - If player collide with any of the fireballs, game ends and displays the total score. 
+ - After a specific time according to the levels (Easy|Medium|Hard) more fireballs will be added to the game.  
+ - If the player collides with any of the fireballs, the game ends and it displays the total score. 
