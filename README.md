@@ -12,7 +12,10 @@ Fireball is python game using pygame where player has to save itself from the fi
 ## Gameplay Screenshots
 
 Initial state of the game:
+
 ![alt text](fireballss_initial.png)
 
+
 Another screenshot from gameplay:
+
 ![alt text](screenshotFireball.png)
