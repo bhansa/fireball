@@ -1,0 +1,1 @@
+Store all assets like images etc. in this folder.
