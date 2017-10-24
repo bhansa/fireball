@@ -20,8 +20,8 @@ class Game:
         pygame.init()
         self.size = width, self.height = 600, 600
         self.screen = pygame.display.set_mode(self.size)
-        pygame.display.set_caption("Assignment: Ball Game")
-        self.ball = pygame.image.load("fireball.png")
+        pygame.display.set_caption("Fireball")
+        self.ball = pygame.image.load("assets/fireball.png")
         pygame.key.set_repeat(10, 10)
         self.clk = pygame.time.Clock()
         self.loop = True
@@ -30,7 +30,7 @@ class Game:
 
     # Shows a message
     def message_display(self, text):
-        txt = pygame.font.Font('freesansbold.ttf', 20)
+        txt = pygame.font.Font('freesansbold.ttf', 12)
         s = txt.render(text, True, Constants.BLACK)
         sr = s.get_rect()
         sr.center = (400, 10)
