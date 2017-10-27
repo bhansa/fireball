@@ -103,10 +103,52 @@ class Game:
         self.clk.tick(60)
 
 
+class SplashScreen:
+    """ Splash Screen """
+    def __init__(self):
+        pygame.init()
+        self.size = self.width, self.height = Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT
+        self.screen = pygame.display.set_mode(self.size)
+        pygame.display.set_caption("Fireball")
+        self.draw_text("Fireball", 48, Constants.WHITE, self.width / 2, self.height / 4)
+        self.draw_text("Press the arrow keys to move around.", 22, Constants.WHITE,
+                       self.width / 2, self.height / 2.5)
+        self.draw_text('Press P to play or Q to quit', 22, Constants.WHITE,
+                       self.width / 2, self.height / 2)
+        self.clk = pygame.time.Clock()
+        self.play_game = False
+        pygame.display.flip()
+        self.wait_for_key()
+
+    def draw_text(self, text, size, color, x, y):
+        font = pygame.font.Font('freesansbold.ttf', size)
+        text_surface = font.render(text, True, color)
+        text_rect = text_surface.get_rect()
+        text_rect.midtop = (x, y)
+        self.screen.blit(text_surface, text_rect)
+
+    def wait_for_key(self):
+        waiting = True
+        while waiting:
+            self.clk.tick()
+            for event in pygame.event.get():
+                mouse = pygame.mouse.get_pos()
+                pygame.display.update()
+                if (event.type == pygame.KEYUP and event.key == pygame.K_q or
+                                event.type == pygame.QUIT):
+                    waiting = False
+
+                if event.type == pygame.KEYUP and event.key == pygame.K_p:
+                    waiting = False
+                    self.play_game = True
+
+
 # Entry point for the game
 def main():
     game = Game()
     game.run()
 
 if __name__ == "__main__":
-    main()
+    splash = SplashScreen()
+    if splash.play_game:
+        main()
