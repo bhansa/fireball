@@ -1,8 +1,8 @@
-# Fireball
+#  KEEP AWAY FROM Fireball 
 Fireball is a python game using pygame where a player has to avoid a fireball. The longer the player stays alive, the more points the player gets.
 
 ## How does the game work?
- - Player starts the game and there will be the player and a fireball initially.  
+ - there is a fireball which will be trying to hit the player and the player has to keep away from te fireball .   
  
  - Player will dodge the ball using the keyboard arrow keys, while the fireball will change positions randomly to try to follow the player.  
 
