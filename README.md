@@ -15,6 +15,7 @@ Fireball is a python game using pygame where a player has to avoid a fireball. T
 ## Contributing
 
 Contributions are welcome!
+your one contribution can change this whole game
 
 **Please carefully read this page to make the code review process go as smoothly as possible and to maximize the likelihood of your contribution being merged.**
 
