@@ -1,1 +1,1 @@
-pygame==1.9.3
+Please install the latest version of pygame from cmd prompt.
