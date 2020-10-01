@@ -1,4 +1,4 @@
-# Fireball
+# Fireball - A Burning Ball
 Fireball is a python game using pygame where a player has to avoid a fireball. The longer the player stays alive, the more points the player gets.
 
 ## How does the game work?
